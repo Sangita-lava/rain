@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions</title>
+    <style>
+        .src {
+            width: 400px;
+            height: 400px;
+        }
+        button{
+            padding: 4px 6px;
+            background-color: rgba(0, 0, 255, 0.415);
+            color: white;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <button onclick="stopRain()">Please Stop the Rain</button>
+
+        <img src="rain_stopped.jpg" alt="Rain" id="rain" class="src">
+
+        <button onclick="letRain()">Let It Rain</button>
+    </center>
+
+    <script>
+        function letRain() {
+            document.getElementById('rain').src = "rain.webp";
+        }
+
+        function stopRain() {
+            document.getElementById('rain').src = "Rain_stopped3.avif";
+        }
+    </script>
+</body>
+</html>
